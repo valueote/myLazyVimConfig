@@ -1,5 +1,4 @@
 local palette = {
-  bg = "#faf9f5",
   fg = "#101010",
   line = "#ebebeb",
   paren = "#d7d7d7",
@@ -8,9 +7,7 @@ local palette = {
   border = "#000000",
   emphasis = "#000000",
   string = "#407f00",
-  const = "#53230b",
   highlight = "#006acf",
-  info = "#0253be",
   success = "#407f00",
   warning = "#b07700",
 }
@@ -79,9 +76,9 @@ return {
       color_overrides = {
         latte = {
           -- Background layers (see Catppuccin style-guide)
-          base = palette.bg,
+          base = "#faf9f5",
           mantle = "#f3f2ee",
-          crust = palette.line,
+          crust = "#ebebeb",
 
           -- Surface elements / UI blocks
           surface0 = "#f0efea",
@@ -89,7 +86,7 @@ return {
           surface2 = palette.paren,
 
           -- Typography
-          text = palette.fg,
+          text = "#101010",
           subtext1 = "#2f2f2f",
           subtext0 = "#4a4a4a",
 
@@ -101,9 +98,9 @@ return {
           -- Accents (kept consistent with your palette semantics)
           mauve = "#303030", -- keywords
           blue = "#000000", -- functions/links
-          sapphire = palette.info,
+          sapphire = "#0253be",
           green = palette.string, -- strings/success
-          peach = palette.const, -- static method for cpp
+          peach = "#53230b", -- static method for cpp
           yellow = "#63470f", -- types/warnings
           red = "#ca0043", -- errors
           maroon = "#000000", -- function parameters
